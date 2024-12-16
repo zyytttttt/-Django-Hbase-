@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京租房信息查询系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎使用北京租房信息查询系统</h1>
+
+    <p>请选择您需要的功能：</p>
+<!--    <ul>-->
+<!--        <li><a href="{% url 'price_histogram' %}">价格分布直方图</a></li>-->
+<!--        <li><a href="{% url 'district_price_distribution' %}">北京市各区域租房价格分布</a></li>-->
+<!--        <li><a href="{% url 'district_rental_quantity' %}">北京市各区房屋租赁数量区域分布</a></li>-->
+<!--        <li><a href="{% url 'shortest_rent_cycle' %}">北京短租房最短周期分别</a></li>-->
+<!--        <li><a href="{% url 'rental_pie_chart' %}">北京租房饼图分布</a></li>-->
+<!--        <li><a href="{% url 'rental_time_distribution' %}">可租时间分布</a></li>-->
+<!--        <li><a href="{% url 'house_type_distribution' %}">房屋类型分布</a></li>-->
+<!--    </ul>-->
+    <div class="nav">
+        <a href="{% url 'map_view' %}">地图租房信息查询</a>
+        <a href="{% url 'price_histogram' %}">价格分布直方图</a>
+        <a href="{% url 'district_price_distribution' %}">北京市各区域租房价格分布</a>
+        <a href="{% url 'district_rental_quantity' %}">北京市各区房屋租赁数量区域分布</a>
+        <a href="{% url 'shortest_rent_cycle' %}">北京短租房最短周期分别</a>
+        <a href="{% url 'rental_pie_chart' %}">北京租房饼图分布</a>
+        <a href="{% url 'rental_time_distribution' %}">可租时间分布</a>
+        <a href="{% url 'house_type_distribution' %}">房屋类型分布</a>
+        <!-- 可在此添加更多功能链接 -->
+    </div>
+</body>
+</html>

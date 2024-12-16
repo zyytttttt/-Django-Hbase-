@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_400d859ab66d909432a276110fd19054 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_400d859ab66d909432a276110fd19054" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_400d859ab66d909432a276110fd19054 = L.map(
+                "map_400d859ab66d909432a276110fd19054",
+                {
+                    center: [39.90374, 116.39359],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c58fd1177d139e168e6bdb446de10a5 = L.tileLayer(
+                "https://wprd01.is.autonavi.com/appmaptile?x={x}\u0026y={y}\u0026z={z}\u0026lang=zh_cn\u0026size=1\u0026scl=1\u0026style=7",
+                {"attribution": "\u9ad8\u5fb7-\u5e38\u89c4\u56fe", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3c58fd1177d139e168e6bdb446de10a5.addTo(map_400d859ab66d909432a276110fd19054);
+        
+    
+            var marker_81cb6fabda859ca5d101de7da0383e1d = L.marker(
+                [39.99635003693648, 116.47247718653536],
+                {}
+            ).addTo(map_400d859ab66d909432a276110fd19054);
+        
+    
+            var icon_febb9eb261d760f6d18811f2141aa00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81cb6fabda859ca5d101de7da0383e1d.setIcon(icon_febb9eb261d760f6d18811f2141aa00a);
+        
+    
+        var popup_9dbd49808a159b99ed9cd51af9d36356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49215e173c79797941368487c8ee8eea = $(`<div id="html_49215e173c79797941368487c8ee8eea" style="width: 100.0%; height: 100.0%;">ID: b'13875082', Price: 200.0, Min Nights: 3</div>`)[0];
+                popup_9dbd49808a159b99ed9cd51af9d36356.setContent(html_49215e173c79797941368487c8ee8eea);
+            
+        
+
+        marker_81cb6fabda859ca5d101de7da0383e1d.bindPopup(popup_9dbd49808a159b99ed9cd51af9d36356)
+        ;
+
+        
+    
+    
+            var marker_3814c33bbdc9d1fe273f2fbb1951c7fc = L.marker(
+                [39.630955133729664, 116.28102986627576],
+                {}
+            ).addTo(map_400d859ab66d909432a276110fd19054);
+        
+    
+            var icon_7257e62ee5e0c4db27852af2fb171448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3814c33bbdc9d1fe273f2fbb1951c7fc.setIcon(icon_7257e62ee5e0c4db27852af2fb171448);
+        
+    
+        var popup_cb4db1d1f5ab81d9c809214443908aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_342ada41a8fad2ecace157279bd468a4 = $(`<div id="html_342ada41a8fad2ecace157279bd468a4" style="width: 100.0%; height: 100.0%;">ID: b'15820592', Price: 200.0, Min Nights: 3</div>`)[0];
+                popup_cb4db1d1f5ab81d9c809214443908aa7.setContent(html_342ada41a8fad2ecace157279bd468a4);
+            
+        
+
+        marker_3814c33bbdc9d1fe273f2fbb1951c7fc.bindPopup(popup_cb4db1d1f5ab81d9c809214443908aa7)
+        ;
+
+        
+    
+    
+            var marker_c54b17c55a89adfcb1e9a60c26833342 = L.marker(
+                [39.87722042992954, 116.46232365281689],
+                {}
+            ).addTo(map_400d859ab66d909432a276110fd19054);
+        
+    
+            var icon_a9fa73a943b0ddd02ed1e066ecdea279 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c54b17c55a89adfcb1e9a60c26833342.setIcon(icon_a9fa73a943b0ddd02ed1e066ecdea279);
+        
+    
+        var popup_43b04b009d103894d1fa740b75917321 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cae983a24ec3718fb32e279da454c65 = $(`<div id="html_7cae983a24ec3718fb32e279da454c65" style="width: 100.0%; height: 100.0%;">ID: b'43385465', Price: 200.0, Min Nights: 3</div>`)[0];
+                popup_43b04b009d103894d1fa740b75917321.setContent(html_7cae983a24ec3718fb32e279da454c65);
+            
+        
+
+        marker_c54b17c55a89adfcb1e9a60c26833342.bindPopup(popup_43b04b009d103894d1fa740b75917321)
+        ;
+
+        
+    
+</script>
+</html>
